@@ -1,0 +1,65 @@
+
+import java.util.TreeMap;
+import java.util.TreeSet;
+//have to find for specific subset of students
+public class lab9 {
+	 TreeMap<String,TreeSet<String>> set;
+	public TreeMap<String,Integer> rank(TreeMap<String,TreeSet<String>> s)
+	{
+		TreeMap<String,Integer> ranks=new TreeMap<String,Integer>();
+		for(String student:s.keySet())
+		{
+			for(String movie:s.get(student))
+			{
+				if(!ranks.containsKey(movie))
+				{
+					ranks.put(movie, 1);
+				}
+				else 
+				{
+					ranks.put(movie, ranks.get(movie)+1);
+				}
+			}
+		}
+		return ranks;
+	}
+	public boolean contains(String[] S,String target)
+	{
+		for(String s:S)
+		{
+			if(s==target)
+			{
+
+				return true;		
+			}
+				
+		}
+		return false;
+	}
+	public String MostPopular(TreeMap<String,TreeSet<String>> s,String[] students)
+	{
+		String max="";
+		if(s.keySet().size()>0)
+		{
+		TreeMap<String,TreeSet<String>> currstudents=new TreeMap<String,TreeSet<String>>();
+		for(String tempstudent:s.keySet())
+		{
+			if(contains(students,tempstudent))
+			{
+				currstudents.put(tempstudent, s.get(tempstudent));
+			}
+		}
+		
+		TreeMap<String,Integer> rankings=rank(currstudents);
+		max=rankings.firstKey();
+		for(String test:rankings.keySet())
+		{
+			if(rankings.get(test)>rankings.get(max))
+			{
+				max=test;
+			}
+		}
+		}
+		return max;
+	}
+}
