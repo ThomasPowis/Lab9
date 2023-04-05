@@ -3,8 +3,6 @@ import java.util.List;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import student.Song;
-
 public class Main {
 
 	//Helper method for Task 2
@@ -72,18 +70,15 @@ public class Main {
 		return max;
 	}
 	
-	
 	//Task 3: Testing Method
-	//Programmed by Thomas Powis
-	//Todo: 1.) Add Nikkis method 2.) Finish and commit the text files 3.) Make a implementation method 
-	//for testing
+	//Programmed by Thomas Powis 
 	public static void test() {
 		
 		//First create the ten test cases this is going to be 10 text files
 		
 		//Next create the correct answer for each of the ten test cases
-		String[] answers = {"Joker", "Inception", "Braveheart", "", "", "", "", 
-		                    "", "", ""};
+		String[] answers = {"Joker", "Inception", "Braveheart", "Pulp Fiction", "The Godfather", "Shutter Isand", "Inception", 
+		                    "M", "The Terminator", "The Shining"};
 		
 		//Finally print out each of the methods results compared against the correct answer
 		for(int i = 0; i < 10; i++) {
