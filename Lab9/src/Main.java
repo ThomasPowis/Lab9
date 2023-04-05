@@ -77,7 +77,7 @@ public class Main {
 		//First create the ten test cases this is going to be 10 text files
 		
 		//Next create the correct answer for each of the ten test cases
-		String[] answers = {"Joker", "Inception", "Braveheart", "Pulp Fiction", "The Godfather", "Shutter Isand", "Inception", 
+		String[] answers = {"Joker", "Braveheart", "A Seperation", "Pulp Fiction", "The Godfather", "Shutter Isand", "Inception", 
 		                    "M", "The Terminator", "The Shining"};
 		
 		//Finally print out each of the methods results compared against the correct answer
