@@ -1,0 +1,23 @@
+public static void main(String args[])
+	{
+		//testing code
+		
+		TreeMap<String,TreeSet<String>> map=new TreeMap<String,TreeSet<String>>() ;
+		TreeSet<String> set=new TreeSet<String>();
+		set.add("f");
+		set.add("b");
+		set.add("c");
+		map.put("stud1", set);
+		set=new TreeSet<String>();
+		set.add("b");
+		set.add("b");
+		set.add("b");
+		map.put("stud2", set);
+		set=new TreeSet<String>();
+		set.add("e");
+		set.add("d");
+		set.add("f");
+		map.put("stud3", set);
+		String[] arr= {"stud1","stud2","stud3"};
+		System.out.print(MostPopular(map,arr));
+	}
