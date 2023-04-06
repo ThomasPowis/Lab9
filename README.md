@@ -13,6 +13,6 @@ Nikki Gorski - Task 2: Implementation Method
 Thomas Powis - Task 3: Test Method
 -Created 10 different test cases using text files, passed the cases into the readIn and implementation method and then compared the answer provided by the implementation method against the actual answer. 
 
-!!NOTICE: Thomas Powis merged all of the code together in the main method however he did not make any changes to the  code!!
+!!NOTICE: Thomas Powis merged all of the code together in the main class however he did not make any changes to the  code!!
 
 
