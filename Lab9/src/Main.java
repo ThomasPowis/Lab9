@@ -123,7 +123,7 @@ public class Main {
 			String read = "Test" + (i+1) + ".txt";
 			
 			//Passing the correct text file for each test case into the ReadIn method
-			TreeMap<String, TreeSet<String>> temp = ReadIn(read);
+			TreeMap<String, TreeSet<String>> temp = readStudentPreferences(read);
 			
 			//Create an array of student names using the TreeMap
 			ArrayList<String> myKeys = new ArrayList<>(temp.keySet());
