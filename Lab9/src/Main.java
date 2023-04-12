@@ -4,6 +4,40 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class Main {
+	
+	//Task 1 Reading the files //by Anusha 
+	public static TreeMap<String, TreeSet<String>> readingNameofStudentsFromFile(String file) throws IOException {
+		TreeMap <String, TreeSet<String>> contents = new TreeMap<>();
+
+	}
+	//takes the file from the main
+	//makes a treeSet of the students and another treeSet of the names of the movie 
+	//value- name of the movies key: name of the student 
+	//return treeMap of the student name as value and treeSet as movies  
+
+	// create a new TreeMap to store the student names and their movie preferences
+	TreeMap<String, TreeSet<String>> contents = new TreeMap<>();
+	// create a new BufferedReader to read the file
+	BufferedReader br = new BufferedReader(new FileReader("File"));
+	// read the file line by line
+	String line = br.readLine();
+	while (line  != null) {
+		// split each line into student name and their movie preferences
+		String[] parts = line.split(":"); 
+		// get the name of the student
+		String name = parts[0];
+		// get the list of movie preferences
+		String[] movies = parts[1].split(", ");
+		//create a new tree set to store the movie preferences       
+		TreeSet<String> movieSet = new TreeSet<>();
+		// add each movie preference to the movieSet
+		for (String movie : movies) {
+			movieSet.add(movie);
+		}
+		//return TreeMap
+	}
+}
+
 
 	//Helper method for Task 2
 	public static TreeMap<String,Integer> rank(TreeMap<String,TreeSet<String>> s)
