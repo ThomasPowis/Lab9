@@ -37,7 +37,15 @@ public class Main {
 		for (String movie : movies) {
 			movieSet.add(movie);
 		}
-		//return TreeMap
+		// add the student and their movie preferences to the contents TreeMap
+            contents.put(name, movieSet);
+            // read the next line
+            line = br.readLine();
+        }
+        // close the BufferedReader
+        br.close();
+        // return the contents TreeMap
+        return contents;
 	}
 }
 
